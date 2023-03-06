@@ -1,0 +1,51 @@
+.top{
+    height: 100%;
+    width: 100%;
+    background-color: wheat;
+    background-image: url('D:\media\nobg.png');
+}
+span{
+    display: flex;
+    align-items: flex-end;
+    color:#818181;
+    font-size: 32px;
+    margin-left: 20px;
+}
+span:hover{
+    color:black;
+}
+#clo{
+    font-size: 36px;
+    font-weight: 1000;
+    display: none;
+}
+#clo:hover{
+    color: white;
+}
+#intro{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 1000;
+    font-family: serif;
+}
+.slide{
+    height: 100%;
+    margin-left: 0;
+    width: 0;
+    top: 90px;
+    position: fixed;
+    transition: .8s;
+    overflow-x: hidden;
+    background-color: #111;
+    padding: 18px;
+}
+.slide a{
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 25px;
+    margin: 4px;
+}
+.slide a:hover{
+    color:#fff;
+}
