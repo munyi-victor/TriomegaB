@@ -4,15 +4,12 @@ html{
 .top{
     height: 100vh;
     width: 100%;
-    background-color: wheat;
+    background-color: whitesmoke;
     background-image: url('D:\media\nobg.png');
 }
 #ope, #clo{
-    display: flex;
-    align-items: flex-end;
     color:#818181;
     font-size: 32px;
-    margin-left: 20px;
     cursor: pointer;
 }
 #ope:hover{
@@ -20,6 +17,8 @@ html{
 }
 #ope{
     padding: 18px;
+    float: right;
+    margin-right: 20px;
 }
 #clo{
     font-size: 36px;
@@ -35,7 +34,7 @@ html{
     color: white;
 }
 #intro{
-    color: #fff;
+    color: black;
     font-size: 28px;
     font-weight: 1000;
     font-family: serif;
@@ -46,7 +45,7 @@ html{
     position: fixed;
     z-index: 1;
     top: 90px;
-    left: 0;
+    right: 0;
     background-color: black;
     overflow-x: hidden;
     transition: 0.5s;
