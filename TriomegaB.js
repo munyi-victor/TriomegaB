@@ -3,6 +3,7 @@ const slide = document.querySelector('.slide');
 const clo = document.getElementById('clo');
 const toTop = document.querySelector('.to-top');
 
+
 ope.addEventListener('click', function(){
     slide.style.width = '300px';
     clo.style.display = 'block';
@@ -19,3 +20,4 @@ window.addEventListener('scroll', () =>{
         toTop.classList.remove('active');
     }
 });
+

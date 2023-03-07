@@ -13,8 +13,9 @@
         <i class="fa fa-bars" aria-hidden="true" id="ope"></i><br><br><br>
         <center>
             <div class="label">
-                <p id="intro">TriomegaB Hearts of Passion<br>
-                Transforming Youths into their Future</p>
+                <img src="D:\media\tmb.jpg" id="logo">
+                <p id="intro"><h1>TriomegaB Hearts of Passion Foundation</h1>
+                <h2>Touch Life, Pave Blessing!</h2></p>
             </div>
             <div id="gal">
                 <h1>See what we do and help us achieve!</h1>
@@ -23,7 +24,7 @@
         </center>
     </section>
     <section>
-        <div class="gallery">
+        <div id="gallery">
             <h1>Gallery</h1><br>
             <div class="pics">
                 <img src="D:\media\nobg.png"><br>
@@ -35,7 +36,7 @@
     <div class="slide">
         <i class="fa fa-times" aria-hidden="true" id="clo"></i>
         <a href="">Home</a>
-        <a href="">Gallery</a>
+        <a onclick="gal()" id="gal">Gallery</a>
         <a href="">About</a>
     </div>
     
@@ -44,5 +45,11 @@
     </a>
 
   <script src="TriomegaB.js"></script>  
+  <script>
+    function gal(){
+    document.getElementById("gallery").scrollIntoView();
+    slide.style.width = '0', display = 'none';
+}
+  </script>
 </body>
 </html>
