@@ -9,20 +9,22 @@
     <script src="https://kit.fontawesome.com/e4afd5777a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="top">
-        <i class="fa fa-bars" aria-hidden="true" id="ope"></i><br><br><br>
-        <center>
-            <div class="label">
-                <img src="D:\media\tmb.jpg" id="logo">
-                <p id="intro"><h1>TriomegaB Hearts of Passion Foundation</h1>
-                <h2>Touch Life, Pave Blessing!</h2></p>
-            </div>
-            <div id="gal">
-                <h1>See what we do and help us achieve!</h1>
-                
-            </div>
-        </center>
-    </section>
+    <div class="top">
+        <img src="D:media\tmb.jpg" alt="TriomegaB official logo" id="logo">
+
+        <div class="nav">
+            <a href="">Home</a>
+            <a onclick="gal()" id="gal">Gallery</a>
+            <a href="">About</a>
+        </div>
+
+        <div class="label">
+            <p id="intro">
+                TriomegaB Hearts of Passion<br>
+                We Touch, Inspire and Spread the gratitude.
+            </p>
+        </div>
+    </div>
     <section>
         <div id="gallery">
             <h1>Gallery</h1><br>
@@ -33,16 +35,23 @@
             </div>
         </div>
     </section>
-    <div class="slide">
-        <i class="fa fa-times" aria-hidden="true" id="clo"></i>
-        <a href="">Home</a>
-        <a onclick="gal()" id="gal">Gallery</a>
-        <a href="">About</a>
-    </div>
     
     <a href="#" class="to-top">
         <i class='fas fa-arrow-up'></i>
     </a>
+
+    <div class="pop-up">
+        <button type="button" id="pop-up-close">Close</button>
+        <center>
+            <h1>Do you wish to donate to us?</h1>
+            <label for=" ">Your name:</label>
+            <input type="text" id="nam" required>
+            <span id="msg" style="color: red;"></span><br>
+            <label for=" ">Amount:</label>
+            <input type="number" id="amt" required>
+            <span id="msg2" style="color: red;"></span>
+            <button type="submit">Donate</button></center>
+    </div>
 
   <script src="TriomegaB.js"></script>  
   <script>
