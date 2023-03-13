@@ -21,3 +21,19 @@ window.addEventListener('scroll', () =>{
     }
 });
 
+const pop = document.querySelector('.pop-up');
+const pop_close = document.querySelector('#pop-up-close');
+const donName = document.getElementById('nam');
+const donAmt = document.getElementById('amt');
+
+window.addEventListener('load', function(){
+    pop.style.display = "block";
+});
+
+pop_close.addEventListener('click', function(){
+    pop.style.display = "none";
+});
+
+if(donAmt <= 0){
+    document.getElementById('msg2').innerHTML = "Your donation amount cannot be less than or equal to zero!";
+}
