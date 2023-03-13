@@ -7,13 +7,19 @@ html{
     width: 100%;
     border-bottom: 2px solid black; 
 }
+#intro{
+    font-size: 28px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 100px;
+}
 #logo{
     width: 120px;
     height: 80px;
     border-radius: .6rem;
-    position: absolute;
-    left: 100px;
-    top: 40px;
+    left: 40px;
+    top: 30px;
 }
 #ope, #clo{
     color:#818181;
@@ -24,7 +30,7 @@ html{
     color:black;
 }
 #ope{
-    padding: 18px;
+    padding: 12px;
     float: right;
     margin-right: 20px;
 }
@@ -56,12 +62,13 @@ h2{
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 90px;
+    top: 70px;
     right: 0;
-    background-color: black;
+    background-color: purple;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 18px;
+    font-weight: bold;
 }
 .slide a{
     padding: 8px 8px 8px 32px;
@@ -76,7 +83,7 @@ h2{
 }
 
 .to-top{
-    background-color:green;
+    background-color:purple;
     color: white;
     position: fixed;
     bottom: 26px;
@@ -100,3 +107,70 @@ h2{
     pointer-events: auto;
     opacity: 1;
 }
+
+.pop-up{
+    align-items: center;
+    justify-content: center;
+    display: block;
+    border: 2px solid black;
+    border-radius: .8rem;
+    width: 400px;
+    background-color: orange;
+    color: #fff;
+    font-weight: 1000;
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    display: none;
+    transition: 2s;
+}
+.pop-up label{
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
+}
+.pop-up input{
+    display: block;
+    margin: 5px;
+    border-radius: .4rem;
+    height: 18px;
+    
+}
+#pop-up-close{
+    background-color: purple;
+    padding: 4px;
+    width: 75px;
+}
+.pop-up button{
+    margin: 5px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: .8rem;
+    background-color: red;
+    color: white;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.nav a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    margin: 5px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+ .nav a:hover{
+    background-color: purple;
+    color: white;
+ }
